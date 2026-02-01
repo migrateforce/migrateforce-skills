@@ -1,0 +1,64 @@
+{
+  "name": "@migrateforce/skills",
+  "version": "0.1.0",
+  "description": "The open source Skills library for AI agents. Agent-ready capabilities in SKILL.md format.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "migrateforce-skills": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./skills/*": "./skills/*"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts src/cli.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "validate": "node dist/cli.js validate --all",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "skills",
+    "ai",
+    "agents",
+    "mcp",
+    "migrateforce",
+    "automation",
+    "llm"
+  ],
+  "author": "MigrateForce <hello@migrateforce.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migrateforce/migrateforce-skills.git"
+  },
+  "homepage": "https://migrateforce.com/skills",
+  "bugs": {
+    "url": "https://github.com/migrateforce/migrateforce-skills/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "glob": "^10.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
