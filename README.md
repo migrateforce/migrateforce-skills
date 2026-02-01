@@ -188,23 +188,43 @@ migrateforce-skills/
 
 ---
 
-## Using Skills with MCP
+## Using Skills with AI Agents
 
-Skills provide context for MCP servers:
+Skills work with any AI agent that can read context:
+
+### Claude Code
+
+```bash
+# Add skill to project
+npx @migrateforce/cli skill add patient-intake
+
+# Reference in CLAUDE.md
+echo "See ./skills/patient-intake/SKILL.md for patient intake workflow" >> CLAUDE.md
+```
+
+### Cursor
+
+```bash
+# Add to your project
+npx @migrateforce/cli skill add patient-intake
+
+# Reference in .cursorrules
+echo "@skills/patient-intake/SKILL.md" >> .cursorrules
+```
+
+### Programmatic Use
 
 ```typescript
 import { loadSkill } from '@migrateforce/skills';
-import { generateMcpServer } from '@migrateforce/mcp';
 
-// Load skill for context
 const skill = await loadSkill('./skills/patient-intake/SKILL.md');
 
-// Generate skill-aware MCP server
-await generateMcpServer({
-  spec: './healthcare-api.yaml',
-  skills: [skill],
-  output: './mcp-server',
-});
+// Use as context for any LLM
+const systemPrompt = `You have the following skill:
+
+${skill.body}
+
+Execute this skill when the user's request matches.`;
 ```
 
 ---

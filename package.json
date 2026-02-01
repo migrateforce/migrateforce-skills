@@ -33,10 +33,13 @@
     "skills",
     "ai",
     "agents",
-    "mcp",
+    "claude-code",
+    "cursor",
+    "cline",
     "migrateforce",
     "automation",
-    "llm"
+    "llm",
+    "ai-agents"
   ],
   "author": "MigrateForce <hello@migrateforce.com>",
   "license": "MIT",
