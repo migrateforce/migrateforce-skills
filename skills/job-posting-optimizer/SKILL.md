@@ -2,7 +2,7 @@
 name: job-posting-optimizer
 description: Analyze and improve job postings to attract more qualified candidates. Use when creating new job listings or improving underperforming postings.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

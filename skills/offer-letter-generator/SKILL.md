@@ -2,7 +2,7 @@
 name: offer-letter-generator
 description: Generate compliant offer letters with compensation details, equity grants, and start date coordination. Use when extending job offers to candidates.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

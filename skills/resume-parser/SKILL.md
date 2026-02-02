@@ -2,7 +2,7 @@
 name: resume-parser
 description: Extract structured data from resumes in any format (PDF, DOCX, LinkedIn). Use when ingesting candidate applications or building talent databases.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

@@ -2,7 +2,7 @@
 name: candidate-screening
 description: Screen and rank job applicants against a job description, summarize top candidates, and flag potential concerns. Use when reviewing large applicant pools from ATS systems like Greenhouse, Ashby, or Workday.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

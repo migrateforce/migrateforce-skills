@@ -2,7 +2,7 @@
 name: candidate-outreach
 description: Craft and send personalized recruitment messages to passive candidates. Use when sourcing talent from LinkedIn, GitHub, or other platforms.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

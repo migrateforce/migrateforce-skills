@@ -2,7 +2,7 @@
 name: reference-checker
 description: Conduct and document professional reference checks for final-stage candidates. Use when verifying candidate backgrounds before extending offers.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking

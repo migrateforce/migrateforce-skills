@@ -2,7 +2,7 @@
 name: interview-scheduler
 description: Coordinate and schedule interviews between candidates and hiring teams. Use when booking phone screens, technical interviews, or panel interviews across multiple calendars.
 license: MIT
-compatibility: claude-code, cursor, cline, windsurf
+compatibility: claude-code, cursor, cline, windsurf, antigravity, opencode
 metadata:
   industry: hr-software
   segment: applicant-tracking
